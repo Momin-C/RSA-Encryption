@@ -1,19 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the CS-ISU and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** Momin-C, CS-ISU, twitter_handle, email
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -60,16 +44,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Useful Documentation](#useful-documentation)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+  * [Packages](#packages)
+* [Videos](#videos)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
@@ -80,7 +59,7 @@
 
 This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input. The next sections explain how the encryption works.
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE -->
 ## Usage
 
 To use this file and test its encryption simply clone the CS-ISU onto your computer and run it using an IDE or a compiler of your choice
@@ -89,8 +68,11 @@ To use this file and test its encryption simply clone the CS-ISU onto your compu
 git clone https://github.com/Momin-C/CS-ISU.git
 ```
 
+<!-- ROADMAP -->
+## Roadmap
+
 <!-- PACKAGES -->
-## Packages
+### Packages
 
 To securely encrypt the given input, three packages/modules needed to be imported
 
@@ -107,52 +89,18 @@ To learn more about each package/module, their documentation is in the links bel
 * [java.security.SecureRandom](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
 
 
+<!-- VIDEOS  -->
+## Videos
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/Momin-C/CS-ISU/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
+The program accepts any keyboard input that has an ASCII value, this means special characters, upper-case, lower-case and more. Videos can be seen below using different inputs with different cases and special characters.
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@momin_c](https://twitter.com/momin_c) - hellomomins@yahoo.com
 
 Project Link: [https://github.com/Momin-C/CS-ISU](https://github.com/Momin-C/CS-ISU)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
