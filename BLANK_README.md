@@ -82,8 +82,10 @@ Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
 `github_username`, `repo`, `twitter_handle`, `email`
 
+<!-- PACKAGES -->
+## Packages
 
-### Imports
+To securely encrypt the given input, three packages/modules needed to be imported
 
 ```java
 import java.util.*;
@@ -96,15 +98,6 @@ To learn more about each package/module, their documentation is in the links bel
 * [java.util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
 * [java.math.BigInteger](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
 * [java.security.SecureRandom](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
-
-
-
-<!-- PACKAGES -->
-## Packages
-
-To securely encrypt the given input, three packages/modules needed to be imported
-
-
 
 1. Clone the repo
 ```sh
