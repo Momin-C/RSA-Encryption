@@ -83,7 +83,15 @@ Here's a blank template to get started:
 `github_username`, `repo`, `twitter_handle`, `email`
 
 
-### Useful Documentation
+### Imports
+
+```java
+import java.util.*;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+```
+
+To learn more about each package/module, their documentation is in the links below
 
 * [java.util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
 * [java.math.BigInteger](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
@@ -96,9 +104,7 @@ Here's a blank template to get started:
 
 To securely encrypt the given input, three packages/modules needed to be imported
 
-```java
-import java.util.*;
-```
+
 
 1. Clone the repo
 ```sh
