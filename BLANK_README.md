@@ -60,7 +60,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+  * [Useful Documentation](#useful-documentation)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -83,11 +83,11 @@ Here's a blank template to get started:
 `github_username`, `repo`, `twitter_handle`, `email`
 
 
-### Built With
+### Useful Documentation
 
-* []()
-* []()
-* []()
+* [java.util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
+* [java.math.BigInteger](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
+* [java.security.SecureRandom](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
 
 
 
@@ -105,7 +105,7 @@ npm install npm@latest -g
 ```
 
 ### Installation
- 
+
 1. Clone the repo
 ```sh
 git clone https://github.com/github_username/repo.git
