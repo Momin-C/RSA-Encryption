@@ -9,6 +9,7 @@
     This program will encrypt a given input using RSA encryption
     <br />
     <a href="https://www.youtube.com/watch?v=z5l0-HlCo2c"><strong>Video Demo</strong></a>
+    |
     <a href="https://www.drive.google.com"><strong>Infographic</strong></a>
   </p>
 </p>
@@ -39,7 +40,7 @@ This project was developed using the Atom text editor and was tested using Termi
 * [Atom](https://atom.io)
 
 <!-- COMPUTER SCIENCE AND CRYPTOGRAPHY -->
-### Computer Science and Cryptography
+## Computer Science and Cryptography
 Cryptography is the process where messages are converted into a secure form of numbers to prevent anyone from reading the message (except for the desired reader). Cryptography is used everywhere, from typing in your login information to sending messages to banking, with greater reliance on computers we have developed more advanced methods of encryption to fight against hacking and to protect information.
 
 <!-- VIDEOS  -->
