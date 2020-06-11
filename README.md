@@ -34,7 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input.
+This project draws the connection between computer science research and encryption by obtaining a user input and using one of the most secure encryption methods (RSA) to encrypt the given input. The code is explained in the [Roadmap](#roadmap) section of the code and uses many packages, methods, loops, conditional statements, user input and output. This program enables the user to safely send messages to anyone and the end user can decrypt this using this program's built in decryption as well.
 
 <!-- DEVELOPED USING -->
 ### Developed Using
