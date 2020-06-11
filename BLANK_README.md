@@ -1,57 +1,41 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Momin-C/CS-ISU">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">RSA ENCRYPTION</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
-    <br />
-    <a href="https://github.com/Momin-C/CS-ISU"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Momin-C/CS-ISU">View Demo</a>
-    ·
-    <a href="https://github.com/Momin-C/CS-ISU/issues">CS-ISUrt Bug</a>
-    ·
-    <a href="https://github.com/Momin-C/CS-ISU/issues">Request Feature</a>
+    This program will encrypt a given input using RSA encryption
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* [Videos](#videos)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
   * [Packages](#packages)
   * [Class Methods](#class-methods)
   * [Main Method](#main-method)
-* [Videos](#videos)
 * [Contact](#contact)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input. The next sections explain how the encryption works.
+
+<!-- VIDEOS  -->
+## Videos
+
+Inputting "true" to the final prompt
+
+![](images/Encrypted1.gif)
+
+Inputting "false" to the final prompt
+
+![](images/Encrypted2.gif)
 
 <!-- USAGE -->
 ## Usage
@@ -282,22 +266,9 @@ public static void main(String args[]) {
 
 ```
 
-<!-- VIDEOS  -->
-## Videos
-
-Inputting "true" to the final prompt
-![](images/Encrypted1.gif)
-
-Inputting "false" to the final prompt
-![](images/Encrypted2.gif)
-
 <!-- CONTACT -->
 ## Contact
 
 Your Name - [@momin_c](https://twitter.com/momin_c) - hellomomins@yahoo.com
 
 Project Link: [https://github.com/Momin-C/CS-ISU](https://github.com/Momin-C/CS-ISU)
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/screenshot.png
