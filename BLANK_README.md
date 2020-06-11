@@ -47,6 +47,8 @@
 * [Usage](#usage)
 * [Roadmap](#roadmap)
   * [Packages](#packages)
+  * [Class Methods](#classmethods)
+  * [Main Method](#mainmethod)
 * [Videos](#videos)
 * [Contact](#contact)
 
@@ -88,6 +90,15 @@ To learn more about each package/module, their documentation is in the links bel
 * [java.math.BigInteger](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
 * [java.security.SecureRandom](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
 
+<!-- CLASS METHODS -->
+### Class Methods
+
+Class methods go here
+
+<!-- MAIN METHOD -->
+### Main Method
+
+Main method goes here
 
 <!-- VIDEOS  -->
 ## Videos
