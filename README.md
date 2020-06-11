@@ -64,7 +64,9 @@ Inputting `false` to the final prompt
 <!-- USAGE -->
 ## Usage
 
-To use this file and test its encryption simply clone the CS-ISU repository onto your computer and run it using an IDE or a compiler of your choice
+To use this file and test its encryption simply clone the CS-ISU repository onto your computer and run it using an IDE or a compiler of your choice.
+
+NOTE: When running the program, it sometimes takes a while for it to ask for an input due to the large prime numbers being generated. If this is the case re-run the program until it asks for you to input a phrase to decrypt instantly.
 
 ```sh
 git clone https://github.com/Momin-C/CS-ISU.git
