@@ -131,8 +131,7 @@ public static BigInteger smallExponent(BigInteger [] primes, BigInteger privateK
         int num = (int)(privateKeyNum.intValue()*(Math.random()));
         smallExponent = BigInteger.valueOf(num);
     }
-    while (smallExponent.compareTo(BigInteger.ONE) <= 0 || smallExponent.compareTo(privateKeyNum) >= 0 ||
-	!smallExponent.gcd(privateKeyNum).equals(BigInteger.ONE));
+    while (smallExponent.compareTo(BigInteger.ONE) <= 0 || smallExponent.compareTo(privateKeyNum) >= 0 || !smallExponent.gcd(privateKeyNum).equals(BigInteger.ONE));
     return smallExponent;
 }//smallExponent
 
@@ -236,7 +235,52 @@ public static BigInteger [] getData(){
 <!-- MAIN METHOD -->
 ### Main Method
 
-Main method goes here
+The main method calls every method and assigns their return values to appropriate variables, the relevant variables are then printed. The main method also asks the user if they want to decrypt a given input, if true then the methods getData, decryptedData and decryptedPhrase are executed.
+```java
+public static void main(String args[]) {
+    /* The main method calls every method and assigns their values to variables */
+
+    //Calling all methods
+    BigInteger [] primes = twoPrimes();
+    BigInteger publicKey = publicKey(primes);
+    BigInteger privateKeyNum = privateKeyNum(primes);
+    BigInteger smallExponent = smallExponent(primes,privateKeyNum);
+    String phrase = getInput();
+    BigInteger privateKey = privateKey(smallExponent,privateKeyNum);
+    BigInteger numericalValue = numericalValue(phrase);
+    BigInteger encryptedData = encryptedData(numericalValue,smallExponent,publicKey);
+    BigInteger decryptedData = decryptedData(encryptedData,privateKey,publicKey);
+    String decryptedPhrase = decryptedPhrase(decryptedData);
+
+    //Printing out the values
+    System.out.println();
+    System.out.println("ENCRYPTED:");
+    System.out.println(encryptedData);
+
+    System.out.println();
+    System.out.println("PUBLIC KEY");
+    System.out.println(publicKey);
+
+    System.out.println();
+    System.out.println("PRIVATE KEY");
+    System.out.println(privateKey);
+
+    System.out.println();
+    System.out.println("DECRYPTED PHRASE");
+    System.out.println(decryptedPhrase);
+
+    //Asking user if they want to decrypt an integer
+    System.out.println();
+    boolean decryptAnswer = decryptAnswer();
+    if (decryptAnswer){
+        BigInteger [] inputtedData = getData();
+        BigInteger decryptedDataInput = decryptedData(inputtedData[0],inputtedData[1],inputtedData[2]);
+        String decryptedInput = decryptedPhrase(decryptedDataInput);
+        System.out.println("Your decrypted phrase is: " + decryptedInput);
+    }
+}//main
+
+```
 
 <!-- VIDEOS  -->
 ## Videos
