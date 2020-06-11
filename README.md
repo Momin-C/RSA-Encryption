@@ -99,22 +99,22 @@ public static BigInteger publicKey(BigInteger [] primes){
     /* This method calculates the publicKey by obtaining the two primes
      * selected in the twoPrimes() method and multiplying them by eachother
      * this value is then returned */
-	BigInteger publicKey = primes[0].multiply(primes[1]);
-	return publicKey;
+    BigInteger publicKey = primes[0].multiply(primes[1]);
+    return publicKey;
 }//publicKey
 
 public static BigInteger privateKeyNum(BigInteger [] primes){
     /* This method calculates "phi" or the private key number by obtaining
      * the two primes selected in twoPrimes(), subtracting each of them by 1 and multiplying
      * them by eachother and returns this value */
-	BigInteger privateKeyNum = primes[0].subtract(BigInteger.ONE).multiply(primes[1].subtract(BigInteger.ONE));
-	return privateKeyNum;
+    BigInteger privateKeyNum = primes[0].subtract(BigInteger.ONE).multiply(primes[1].subtract(BigInteger.ONE));
+    return privateKeyNum;
 }//privateKeyNum
 
 public static BigInteger smallExponent(BigInteger [] primes, BigInteger privateKeyNum){
     /* This method produces a small exponent which will be used to encrypt the string, it obtains
      * the two prime numbers and the private key number as its parameters, a random
-	 * number is then generated such that it is greater than 1, is less than the
+     * number is then generated such that it is greater than 1, is less than the
      * private key number and its greatest GCF with the private key number is 1,
      * this value is then returned */
     BigInteger smallExponent;
