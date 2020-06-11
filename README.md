@@ -10,9 +10,9 @@
     <br />
     <a href="https://www.youtube.com/watch?v=z5l0-HlCo2c"><strong>Video Demo</strong></a>
     |
-    <a href="https://www.drive.google.com"><strong>Encryption Infographic</strong></a>
+    <a href="https://drive.google.com/file/d/1aEKs5rHfuy5cQfa-v-9mC4q2G00cMMI2/view?usp=sharing"><strong>Encryption Infographic</strong></a>
     |
-    <a href="https://www.drive.google.com"><strong>Emerging Fields Infographic</strong></a>
+    <a href="https://drive.google.com/file/d/1NX_w3gIR1BHN-epXu2Cp-W1vh8PdAYeG/view?usp=sharing"><strong>Exploring Computer Science</strong></a>
   </p>
 </p>
 
