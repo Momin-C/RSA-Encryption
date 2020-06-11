@@ -1,204 +1,278 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
+  <h3 align="center">RSA ENCRYPTION</h3>
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    This program will encrypt a given input using RSA encryption
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+* [Videos](#videos)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+  * [Packages](#packages)
+  * [Class Methods](#class-methods)
+  * [Main Method](#main-method)
+* [References](#references)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input. The next sections explain how the encryption works.
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+<!-- VIDEOS  -->
+## Videos
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Inputting "true" to the final prompt
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+![](images/Encrypted1.gif)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Inputting "false" to the final prompt
 
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+![](images/Encrypted2.gif)
 
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
-
-
-
-<!-- USAGE EXAMPLES -->
+<!-- USAGE -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To use this file and test its encryption simply clone the CS-ISU onto your computer and run it using an IDE or a compiler of your choice
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+```sh
+git clone https://github.com/Momin-C/CS-ISU.git
+```
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+<!-- PACKAGES -->
+### Packages
 
+To securely encrypt the given input, three packages/modules needed to be imported
 
+```java
+import java.util.*;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+```
 
-<!-- CONTRIBUTING -->
-## Contributing
+To learn more about each package/module, their documentation is in the links below
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+* [java.util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
+* [java.math.BigInteger](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
+* [java.security.SecureRandom](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<!-- CLASS METHODS -->
+### Class Methods
 
+This section will explain in detail how the RSA encryption works
 
+RSA encryption bases itself around prime numbers. the method twoPrimes() generates a secure random number using the java.security.secureRandom package. Big integer is used to create two prime numbers due to complex operations taking place that no data set can handle. These two prime numbers are selected and placed in a BigInteger array and then returned. Code can be seen below.
 
-<!-- LICENSE -->
-## License
+```java
+public static BigInteger [] twoPrimes() {
+    /* This method selects two random prime numbers in the length of 512 bits
+     * appends these to a BigInteger array and returns it */
+    Random rand = new SecureRandom();
+    BigInteger primeOne = BigInteger.probablePrime(512, rand);
+    BigInteger primeTwo = BigInteger.probablePrime(512, rand);
+    BigInteger [] primesSelected = {primeOne,primeTwo};
+    return primesSelected;
+}//twoPrimes
+```
 
-Distributed under the MIT License. See `LICENSE` for more information.
+RSA encryption involves the use of two keys, public and private. Aspects of the public key are used to encrypt the message and the private key is used to decrypt the messsage. The public key consists of 'n' which is the product of both the prime numbers and 'e' which is a small exponent. The private and public key aspects are determined below and the
 
+```java
+public static BigInteger publicKey(BigInteger [] primes){
+    /* This method calculates the publicKey by obtaining the two primes
+     * selected in the twoPrimes() method and multiplying them by eachother
+     * this value is then returned */
+	BigInteger publicKey = primes[0].multiply(primes[1]);
+	return publicKey;
+}//publicKey
 
+public static BigInteger privateKeyNum(BigInteger [] primes){
+    /* This method calculates "phi" or the private key number by obtaining
+     * the two primes selected in twoPrimes(), subtracting each of them by 1 and multiplying
+     * them by eachother and returns this value */
+	BigInteger privateKeyNum = primes[0].subtract(BigInteger.ONE).multiply(primes[1].subtract(BigInteger.ONE));
+	return privateKeyNum;
+}//privateKeyNum
+
+public static BigInteger smallExponent(BigInteger [] primes, BigInteger privateKeyNum){
+    /* This method produces a small exponent which will be used to encrypt the string, it obtains
+     * the two prime numbers and the private key number as its parameters, a random
+	 * number is then generated such that it is greater than 1, is less than the
+     * private key number and its greatest GCF with the private key number is 1,
+     * this value is then returned */
+    BigInteger smallExponent;
+    do {
+        int num = (int)(privateKeyNum.intValue()*(Math.random()));
+        smallExponent = BigInteger.valueOf(num);
+    }
+    while (smallExponent.compareTo(BigInteger.ONE) <= 0 || smallExponent.compareTo(privateKeyNum) >= 0 || !smallExponent.gcd(privateKeyNum).equals(BigInteger.ONE));
+    return smallExponent;
+}//smallExponent
+
+public static BigInteger privateKey(BigInteger smallExponent, BigInteger privateKeyNum){
+    /* This method obtains the small exponent and the private key number as its parameters
+     * to calculate the private key by inversing the small exponent and modding
+     * it by the private key number and returns it */
+    BigInteger privateKey = smallExponent.modInverse(privateKeyNum);
+    return privateKey;
+}//privateKey
+```
+
+Input is then received from the user in the method getInput(). This string value is then converted into numbers in the numericalValue() method by converting each character into its ASCII code and adding 100 to it. This makes sure that each character's code is 3 digits making it to parse and convert back to string.
+
+```java
+public static String getInput(){
+    /* This method asks the user to input a string they want to encrypt and returns it */
+    System.out.print("Input the phrase you want to encrypt: ");
+    String phrase = input.nextLine();
+    return phrase;
+}//getInput
+
+public static BigInteger numericalValue(String phrase) {
+    /* This method obtains the user's string they want to encrypt as its parameter, obtains its
+     * ASCII code, appens that to a string and then converts the string to a BigInteger
+     * which is then returned. The ASCII code has 100 added to it so each character has
+     * three ASCII values making it able to decrypt */
+    String numString = "";
+    for (int index = 0; index<phrase.length(); index++){
+        char indexCharacter = phrase.charAt(index);
+        int alphaValue = (int)indexCharacter+100;
+        numString+=alphaValue;
+    }
+    BigInteger num = new BigInteger(numString);
+    return num;
+}//numericalValue
+```
+Once these keys are collected, the string converted into a BigInteger is then encrypted.
+```java
+public static BigInteger encryptedData(BigInteger numericalValue, BigInteger smallExponent, BigInteger publicKey){
+    /* This method obtains the numericalValue of the string, the small exponent
+     * and the public key, it then encrypts the data by following the formula numerical
+     * value ^ small exponent modulo public Key and returns this encrypted data */
+    BigInteger encryptedData = numericalValue.modPow(smallExponent,publicKey);
+    return encryptedData;
+}//encryptedData
+```
+The data is then decrypted as well and converted back to string format
+```java
+public static BigInteger decryptedData(BigInteger encryptedData, BigInteger privateKey, BigInteger publicKey){
+    /* This method obtains the encrypted data, the private key and the public key and
+     * decrypts the data by raising the encrypted data to the power of the private key
+     * and then modding it by the public key, this value is then returned */
+    BigInteger decryptedData = encryptedData.modPow(privateKey,publicKey);
+    return decryptedData;
+}//decryptedData
+
+public static String decryptedPhrase(BigInteger decryptedData){
+    /* This method obtains the decrypted data and converts the decryptedData
+     * to the original String by comparing the ASCII values to their respective
+     * characters, this is subtracted by 100 as 100 was previously added and then
+     * this string is returned */
+    String decrypted = String.valueOf(decryptedData);
+    String word = "";
+    for (int index = 0; index < decrypted.length(); index+=3){
+        int num = Integer.valueOf(decrypted.substring(index,index+3)) -100;
+        word+=(char)num;
+    }
+    return word;
+}//decryptedPhrase
+```
+User input decryption uses the two decryption methods as well but includes these two methods to get the keys from the user
+```java
+public static boolean decryptAnswer(){
+    /* This method asks a user if they want to decrypt a given input
+     * and returns this boolean value */
+    System.out.println("Do you want the program to decrypt a given input? (true or false): ");
+    boolean answer = input.nextBoolean();
+    return answer;
+}//decryptAnswer
+
+public static BigInteger [] getData(){
+    /* This method obtains the big integer to decrypt, the public
+     * and private key then returns these three in a BigInteger array */
+    System.out.println();
+    System.out.println("Input BigInteger to decrypt: ");
+    BigInteger toDecrypt = input.nextBigInteger();
+
+    System.out.println();
+    System.out.println("Input private key: ");
+    BigInteger privateKey = input.nextBigInteger();
+
+    System.out.println();
+    System.out.println("Input public key: ");
+    BigInteger publicKey = input.nextBigInteger();
+
+    BigInteger [] data = {toDecrypt,privateKey,publicKey};
+    return data;
+}//getData
+```
+<!-- MAIN METHOD -->
+### Main Method
+
+The main method calls every method and assigns their return values to appropriate variables, the relevant variables are then printed. The main method also asks the user if they want to decrypt a given input, if true then the methods getData, decryptedData and decryptedPhrase are executed.
+```java
+public static void main(String args[]) {
+    /* The main method calls every method and assigns their values to variables */
+
+    //Calling all methods
+    BigInteger [] primes = twoPrimes();
+    BigInteger publicKey = publicKey(primes);
+    BigInteger privateKeyNum = privateKeyNum(primes);
+    BigInteger smallExponent = smallExponent(primes,privateKeyNum);
+    String phrase = getInput();
+    BigInteger privateKey = privateKey(smallExponent,privateKeyNum);
+    BigInteger numericalValue = numericalValue(phrase);
+    BigInteger encryptedData = encryptedData(numericalValue,smallExponent,publicKey);
+    BigInteger decryptedData = decryptedData(encryptedData,privateKey,publicKey);
+    String decryptedPhrase = decryptedPhrase(decryptedData);
+
+    //Printing out the values
+    System.out.println();
+    System.out.println("ENCRYPTED:");
+    System.out.println(encryptedData);
+
+    System.out.println();
+    System.out.println("PUBLIC KEY");
+    System.out.println(publicKey);
+
+    System.out.println();
+    System.out.println("PRIVATE KEY");
+    System.out.println(privateKey);
+
+    System.out.println();
+    System.out.println("DECRYPTED PHRASE");
+    System.out.println(decryptedPhrase);
+
+    //Asking user if they want to decrypt an integer
+    System.out.println();
+    boolean decryptAnswer = decryptAnswer();
+    if (decryptAnswer){
+        BigInteger [] inputtedData = getData();
+        BigInteger decryptedDataInput = decryptedData(inputtedData[0],inputtedData[1],inputtedData[2]);
+        String decryptedInput = decryptedPhrase(decryptedDataInput);
+        System.out.println("Your decrypted phrase is: " + decryptedInput);
+    }
+}//main
+
+```
+<!-- REFERENCES -->
+## References
+I learned about RSA Encryption through the University of Waterloo's slideshows. Links to the slideshows can be seen below
+* [Slideshow](https://cs.uwaterloo.ca/~cbruni/videos/Math135JanApr2016/CCCWeek9Pt1RSA.pdf)
+* [Worked Example](https://cs.uwaterloo.ca/~cbruni/videos/Math135SeptDec2015/Lesson19RSA.pdf)
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [@momin_c](https://instagram.com/momin_c) - hellomomins@yahoo.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+Project Link: [https://github.com/Momin-C/CS-ISU](https://github.com/Momin-C/CS-ISU)
