@@ -285,8 +285,11 @@ public static void main(String args[]) {
 <!-- VIDEOS  -->
 ## Videos
 
-The program accepts any keyboard input that has an ASCII value, this means special characters, upper-case, lower-case and more. Videos can be seen below using different inputs with different cases and special characters.
+Inputting "true" to the final prompt
+![](images/Encrypted1.gif)
 
+Inputting "false" to the final prompt
+![](images/Encrypted2.gif)
 
 <!-- CONTACT -->
 ## Contact
