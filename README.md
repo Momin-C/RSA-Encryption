@@ -9,6 +9,7 @@
     This program will encrypt a given input using RSA encryption
     <br />
     <a href="https://www.youtube.com/watch?v=z5l0-HlCo2c"><strong>Video Demo</strong></a>
+    <a href="https://www.drive.google.com"><strong>Infographic</strong></a>
   </p>
 </p>
 
@@ -16,6 +17,8 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+    * [Developed Using](#developed-using)
+* [Computer Science and Cryptography](#computer-science-and-cryptography)
 * [Videos](#videos)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
@@ -28,7 +31,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input. The next sections explain how the encryption works.
+This project uses one of the most secure and common methods of encryption (RSA) to encrypt a given user input. It also asks the user if they want to decrypt a given input.
+
+<!-- DEVELOPED USING -->
+### Developed Using
+This project was developed using the Atom text editor and was tested using Terminal.
+* [Atom](https://atom.io)
+
+<!-- COMPUTER SCIENCE AND CRYPTOGRAPHY -->
+### Computer Science and Cryptography
+Cryptography is the process where messages are converted into a secure form of numbers to prevent anyone from reading the message (except for the desired reader). Cryptography is used everywhere, from typing in your login information to sending messages to banking, with greater reliance on computers we have developed more advanced methods of encryption to fight against hacking and to protect information.
 
 <!-- VIDEOS  -->
 ## Videos
@@ -49,7 +61,7 @@ Inputting "false" to the final prompt
 <!-- USAGE -->
 ## Usage
 
-To use this file and test its encryption simply clone the CS-ISU onto your computer and run it using an IDE or a compiler of your choice
+To use this file and test its encryption simply clone the CS-ISU repository onto your computer and run it using an IDE or a compiler of your choice
 
 ```sh
 git clone https://github.com/Momin-C/CS-ISU.git
