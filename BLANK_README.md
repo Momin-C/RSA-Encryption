@@ -47,8 +47,8 @@
 * [Usage](#usage)
 * [Roadmap](#roadmap)
   * [Packages](#packages)
-  * [Class Methods](#classmethods)
-  * [Main Method](#mainmethod)
+  * [Class Methods](#class-methods)
+  * [Main Method](#main-method)
 * [Videos](#videos)
 * [Contact](#contact)
 
