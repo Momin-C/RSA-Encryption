@@ -1,6 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
+  <p align="center">
+  <a href="https://github.com/Momin-C/CS-ISU">
+    <img src="images/lock.png" alt="Logo" width="80" height="80">
+  </a>
   <h3 align="center">RSA ENCRYPTION</h3>
   <p align="center">
     This program will encrypt a given input using RSA encryption
@@ -28,7 +31,8 @@ This project uses one of the most secure and common methods of encryption (RSA) 
 <!-- VIDEOS  -->
 ## Videos
 
-Full in-depth use of this program can be found on the link below.
+Full in-depth use of this program can be found on this link below:
+
 [https://www.youtube.com/watch?v=z5l0-HlCo2c](https://www.youtube.com/watch?v=z5l0-HlCo2c)
 
 GIFs are below.
