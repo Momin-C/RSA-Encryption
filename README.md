@@ -10,7 +10,9 @@
     <br />
     <a href="https://www.youtube.com/watch?v=z5l0-HlCo2c"><strong>Video Demo</strong></a>
     |
-    <a href="https://www.drive.google.com"><strong>Infographic</strong></a>
+    <a href="https://www.drive.google.com"><strong>Encryption Infographic</strong></a>
+    |
+    <a href="https://www.drive.google.com"><strong>Emerging Fields Infographic</strong></a>
   </p>
 </p>
 
