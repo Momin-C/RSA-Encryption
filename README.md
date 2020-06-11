@@ -28,6 +28,10 @@ This project uses one of the most secure and common methods of encryption (RSA) 
 <!-- VIDEOS  -->
 ## Videos
 
+Full in-depth use of this program can be found on the link below.
+[https://www.youtube.com/watch?v=z5l0-HlCo2c](https://www.youtube.com/watch?v=z5l0-HlCo2c)
+
+GIFs are below.
 Inputting "true" to the final prompt
 
 ![](images/Encrypted1.gif)
