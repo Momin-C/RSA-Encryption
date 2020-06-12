@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <p align="center">
-  <a href="https://github.com/Momin-C/CS-ISU">
+  <a href="https://github.com/Momin-C/RSA-Encryption">
     <img src="images/lock.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">RSA ENCRYPTION</h3>
@@ -69,7 +69,7 @@ To use this file and test its encryption simply clone the CS-ISU repository onto
 NOTE: When running the program, it sometimes takes a while for it to ask for an input due to the large prime numbers being generated. If this is the case re-run the program until it asks for you to input a phrase to decrypt instantly.
 
 ```sh
-git clone https://github.com/Momin-C/CS-ISU.git
+git clone https://github.com/Momin-C/RSA-Encryption.git
 ```
 
 <!-- ROADMAP -->
@@ -302,4 +302,4 @@ I learned about RSA Encryption through the University of Waterloo's slideshows. 
 
 Your Name - [@momin_c](https://instagram.com/momin_c) - hellomomins@yahoo.com
 
-Project Link: [https://github.com/Momin-C/CS-ISU](https://github.com/Momin-C/CS-ISU)
+Project Link: [https://github.com/Momin-C/RSA-Encryption](https://github.com/Momin-C/RSA-Encryption)
